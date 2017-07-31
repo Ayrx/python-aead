@@ -2,7 +2,7 @@ python-aead
 ===========
 
 [![Build Status](https://travis-ci.org/Ayrx/python-aead.svg?branch=master)](https://travis-ci.org/Ayrx/python-aead)
-[![Coverage Status](https://img.shields.io/coveralls/Ayrx/python-aead.svg)](https://coveralls.io/r/Ayrx/python-aead)
+[![codecov.io](http://codecov.io/github/Ayrx/python-aead/coverage.svg?branch=master)](http://codecov.io/github/Ayrx/python-aead?branch=master)
 
 python-aead is a implementation of an algorithm for authenticated encryption 
 with associated data (AEAD). It uses the AES cipher in CBC mode and HMAC-SHA256
