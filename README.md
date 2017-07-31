@@ -6,8 +6,7 @@ python-aead
 
 python-aead is a implementation of an algorithm for authenticated encryption 
 with associated data (AEAD). It uses the AES cipher in CBC mode and HMAC-SHA256
-for message authentication. It is based on an [IETF Internet Draft]
-(http://tools.ietf.org/html/draft-mcgrew-aead-aes-cbc-hmac-sha2-05#page-31) 
+for message authentication. It is based on an [IETF Internet Draft](http://tools.ietf.org/html/draft-mcgrew-aead-aes-cbc-hmac-sha2-05) 
 from David McGrew.
 
 python-aead aims to be opinionated about algorithm choice. It is essentially
