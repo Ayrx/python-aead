@@ -1,17 +1,23 @@
 language: python
-os:
-    - linux
 
-env:
-    matrix:
-        - TOX_ENV=py26
-        - TOX_ENV=py27
-        - TOX_ENV=py32
-        - TOX_ENV=py33
-        - TOX_ENV=py34
-        - TOX_ENV=pypy
-        - TOX_ENV=pep8
-        - TOX_ENV=py3pep8
+matrix:
+    include:
+        - python: 2.6
+          env: TOX_ENV=py26
+        - python: 2.7
+          env: TOX_ENV=py27
+        - python: 3.4
+          env: TOX_ENV=py34
+        - python: 3.5
+          env: TOX_ENV=py35
+        - python: 3.6
+          env: TOX_ENV=py36
+        - python: pypy
+          env: TOX_ENV=pypy
+        - python: 2.7
+          env: TOX_ENV=pep8
+        - python: 3.5
+          env: TOX_ENV=py3pep8
 
 install:
     - ./.travis/install.sh
@@ -20,4 +26,4 @@ script:
     - ./.travis/run.sh
 
 after_success:
-    - source ~/.venv/bin/activate && coveralls
+        - ./.travis/upload_coverage.sh
